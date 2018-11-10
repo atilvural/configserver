@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: http://localhost:10080/root/shoppar.git
+          uri: http://188.119.39.71:10080/root/shoppar.git
           clone-on-start: true
       enabled: true
 server:
@@ -17,6 +17,6 @@ security:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://188.119.39.71:8761/eureka/
   instance:
     preferIpAddress: true
