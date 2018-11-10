@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://localhost:10080/root/shoppar.git
+          clone-on-start: true
+      enabled: true
+server:
+  port: 8017
+security:
+  user:
+    name: root
+    password: 129834765
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
